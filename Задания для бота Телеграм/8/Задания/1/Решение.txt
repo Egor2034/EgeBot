@@ -1,0 +1,7 @@
+from itertools import product 
+alphabet = '1234'
+ap=[]
+for i in product(alphabet, repeat=5):    
+    if i.count('1') == 2:
+        ap.append(i)
+print(len(ap))
